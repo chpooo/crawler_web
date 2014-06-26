@@ -1,0 +1,11 @@
+<?php
+require_once("sql.php");
+if(isset($_POST['insert_ip'])&&isset($_POST['insert_name'])&&$_POST['insert_ip']!=""&&$_POST['insert_name']!="")
+{
+	$data['name']=$_POST['insert_name'];
+	$data['address']=$_POST['insert_ip'];
+	sql_insert("localhost","root","","crawler_web","crawler_server",$data);
+}
+header("Location:server.php");
+exit;
+?>

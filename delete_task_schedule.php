@@ -1,0 +1,10 @@
+<?php
+require_once("sql.php");
+if(isset($_POST['delete_id']))
+{
+	$data['id']=$_POST['delete_id'];
+	sql_delete("localhost","root","","crawler_web","task_schedule",$data);
+}
+header("Location:task_schedule.php");
+exit;
+?>

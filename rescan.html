@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head><title>Heritrix Engine 3.1.1</title>
+<base href='https://10.14.39.196:8443/engine/'/>
+<link rel="stylesheet" type="text/css" href="https://10.14.39.196:8443/engine/static/engine.css">
+</head>
+<body>
+<h1>Heritrix Engine 3.1.1</h1>
+<p><b>Memory:</b> 172361 KiB used; 223360 KiB current heap; 233024 KiB max heap</p>
+<p><b>Jobs Directory</b>: <a href='jobsdir'>/home/chpooo/heritrix-3.1.1/jobs</a></p>
+<form method='POST'><h2>Job Directories (8)
+<input type='submit' name='action' value='rescan'>
+</h2></form>
+<ul>
+<li class="job"><div>
+<a href='job/gasgoo.com'>gasgoo.com</a>
+&laquo;Finished: FINISHED&raquo;
+ 21 launches
+</div>
+<div style='color:#666'>
+./jobs/gasgoo.com/crawler-beans.cxml
+</div>
+<div>(last at 2014-04-11T04:46:02.958Z)</div>
+</li>
+<li class="job"><div>
+<a href='job/gasgoo.com_ecar'>gasgoo.com_ecar</a>
+ 0 launches
+</div>
+<div style='color:#666'>
+./jobs/gasgoo.com_ecar/crawler-beans.cxml
+</div>
+<div>(last at 2014-04-11T04:20:56.161Z)</div>
+</li>
+<li class="job"><div>
+<a href='job/auto.sina.com_ecar'>auto.sina.com_ecar</a>
+ 1 launches
+</div>
+<div style='color:#666'>
+./jobs/auto.sina.com_ecar/crawler-beans.cxml
+</div>
+<div>(last at 2014-04-11T01:41:17.830Z)</div>
+</li>
+<li class="job"><div>
+<a href='job/baidu_test'>baidu_test</a>
+ 6 launches
+</div>
+<div style='color:#666'>
+./jobs/baidu_test/crawler-beans.cxml
+</div>
+<div>(last at 2014-04-10T12:30:57.317Z)</div>
+</li>
+<li class="job"><div>
+<a href='job/auto.sina.com'>auto.sina.com</a>
+ 30 launches
+</div>
+<div style='color:#666'>
+./jobs/auto.sina.com/crawler-beans.cxml
+</div>
+<div>(last at 2014-04-09T03:54:16.888Z)</div>
+</li>
+<li class="job"><div>
+<a href='job/auto.sohu.com'>auto.sohu.com</a>
+ 9 launches
+</div>
+<div style='color:#666'>
+./jobs/auto.sohu.com/crawler-beans.cxml
+</div>
+<div>(last at 2014-04-04T13:36:35.721Z)</div>
+</li>
+<li class="job"><div>
+<a href='job/dblab'>dblab</a>
+ 4 launches
+</div>
+<div style='color:#666'>
+./jobs/dblab/crawler-beans.cxml
+</div>
+<div>(last at 2014-03-25T03:14:14.539Z)</div>
+</li>
+<li class="job"><div>
+<a href='job/test1'>test1</a>
+ 0 launches
+</div>
+<div style='color:#666'>
+./jobs/test1/crawler-beans.cxml
+</div>
+</li>
+</ul>
+<h2>Add Job Directory</h2>
+<form method='POST'>
+<div>Create new job directory with recommended starting configuration</div>
+<div><b>Path:</b> /home/chpooo/heritrix-3.1.1/jobs/<input name='createpath'>
+<input type='submit' name='action' value='create'>
+</div></form>
+
+<form method='POST'>
+<div>Specify a path to a pre-existing job directory</div>
+<div><b>Path:</b> <input size='53' name='addpath'>
+<input type='submit' name='action' value='add'>
+</div></form>
+<p>You may also compose or copy a valid job directory into the main jobs directory via outside means, then use the 'rescan' button above to make it appear in this interface. Or, use the 'copy' functionality at the botton of any existing job's detail page.</p>
+<h2>Exit Java</h2>
+<div>This exits the Java process running Heritrix. To restart will then require access to the hosting machine. You should cleanly terminate and teardown any jobs in progress first.<div>
+<form method='POST'>
+<div>Job 'gasgoo.com' still &laquo;Finished: FINISHED&raquo;</div>
+<input type='checkbox' id='ignore__gasgoo.com' name='ignore__gasgoo.com'><label for='ignore__gasgoo.com'> Ignore job 'gasgoo.com' and exit anyway</label><br>
+<div>
+<input type='submit' name='action' value='Exit Java Process'>
+<input type='checkbox' name='im_sure' id='im_sure'><label for='im_sure'> I'm sure</label>
+</div>
+</form>
+</body>
+</html>

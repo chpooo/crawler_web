@@ -1,0 +1,10 @@
+<?php
+require_once("sql.php");
+if(isset($_POST['delete_ip']))
+{
+	$data['address']=$_POST['delete_ip'];
+	sql_delete("localhost","root","","crawler_web","crawler_server",$data);
+}
+header("Location:server.php");
+exit;
+?>

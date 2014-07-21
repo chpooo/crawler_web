@@ -1,0 +1,3 @@
+0  0  *  *  *  /opt/lampp/htdocs/crawler_web/launch_job.sh 168.160.19.53 ddc_net_cn_news
+30  0  *  *  *  /opt/lampp/htdocs/crawler_web/teardown_job.sh 168.160.19.53 ddc_net_cn_news
+35  0  *  *  *  ssh root@168.160.19.53 "java -jar /root/zju_chpoo/extractor.jar /root/zju_chpoo/job_conf/ddc_net_cn_news"
